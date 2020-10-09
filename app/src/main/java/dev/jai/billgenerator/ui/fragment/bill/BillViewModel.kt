@@ -1,6 +1,6 @@
 package dev.jai.billgenerator.ui.fragment.bill
 
-import android.databinding.ObservableField
+import androidx.databinding.ObservableField
 import dev.jai.billgenerator.ui.base.BaseViewModel
 
 class BillViewModel : BaseViewModel() {

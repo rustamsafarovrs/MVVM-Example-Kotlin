@@ -19,7 +19,7 @@ class BillFragment : BaseFragment<dev.jai.billgenerator.databinding.FragmentBill
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        baskets = arguments!!.getParcelableArrayList(PARAM_LIST)
+        baskets = arguments?.getParcelableArrayList(PARAM_LIST)!!
         mViewModel = BillViewModel()
         mBinding.viewModel = mViewModel
         calculateTax(baskets)

@@ -1,7 +1,7 @@
 package dev.jai.billgenerator.app
 
 import android.app.Activity
-import android.support.multidex.MultiDexApplication
+import androidx.multidex.MultiDexApplication
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector

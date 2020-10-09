@@ -1,9 +1,9 @@
 package dev.jai.billgenerator.ui.base
 
-import android.arch.lifecycle.ViewModel
-import android.databinding.Observable;
-import android.databinding.PropertyChangeRegistry
-import android.support.annotation.NonNull
+import androidx.lifecycle.ViewModel
+import androidx.databinding.Observable;
+import androidx.databinding.PropertyChangeRegistry
+import androidx.annotation.NonNull
 
 
 open class BaseViewModel : ViewModel(), Observable {

@@ -1,6 +1,6 @@
 package dev.jai.billgenerator.binding
 
-import android.databinding.BindingAdapter
+import androidx.databinding.BindingAdapter
 import android.widget.TextView
 import dev.jai.billgenerator.model.Basket
 

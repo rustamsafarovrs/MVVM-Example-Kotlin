@@ -35,7 +35,7 @@ class BasketFragment : BaseFragment<dev.jai.billgenerator.databinding.FragmentBa
         inflater.inflate(dev.jai.billgenerator.R.menu.menu_basket, menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return if (item?.itemId == R.id.action_done) {
             validateFields()
             true

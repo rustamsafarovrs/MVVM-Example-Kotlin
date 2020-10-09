@@ -3,15 +3,22 @@ package dev.jai.billgenerator.model
 import android.os.Parcel
 import android.os.Parcelable
 
-data class Basket(var productName: String, var price: String, var quantity: String, var categoryId: Int, var isImported: Boolean) : Parcelable {
+data class Basket(
+    var productName: String,
+    var price: String,
+    var quantity: String,
+    var categoryId: Int,
+    var isImported: Boolean
+) : Parcelable {
     constructor(parcel: Parcel) : this(
-            parcel.readString(),
-            parcel.readString(),
-            parcel.readString(),
-            parcel.readInt(),
-            parcel.readByte() != 0.toByte())
+        parcel.readString().toString(),
+        parcel.readString().toString(),
+        parcel.readString().toString(),
+        parcel.readInt(),
+        parcel.readByte() != 0.toByte()
+    )
 
-    fun setCategory( position: Int) {
+    fun setCategory(position: Int) {
         categoryId = position
     }
 
@@ -36,7 +43,6 @@ data class Basket(var productName: String, var price: String, var quantity: Stri
             return arrayOfNulls(size)
         }
     }
-
 
 
 }

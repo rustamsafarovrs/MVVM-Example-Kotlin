@@ -1,8 +1,8 @@
 package dev.jai.billgenerator.ui.activity.main
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import dev.jai.billgenerator.R
 import dev.jai.billgenerator.databinding.ActivityMainBinding
 import dev.jai.billgenerator.model.Basket

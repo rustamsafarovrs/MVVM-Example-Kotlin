@@ -9,7 +9,7 @@
             type="dev.jai.billgenerator.model.Basket" />
     </data>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_default_start_end"
@@ -19,12 +19,12 @@
         app:cardCornerRadius="@dimen/card_radius_default"
         app:cardElevation="@dimen/elevation_default">
 
-        <android.support.constraint.ConstraintLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/margin_default_start_end">
 
-            <android.support.constraint.Guideline
+            <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_close_gray_24dp" />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_basket_product_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -59,9 +59,9 @@
                     android:hint="@string/product_name"
                     android:inputType="textCapSentences"
                     android:text="@={basket.productName}" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_basket_product_quantity"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -79,10 +79,10 @@
                     android:hint="@string/quantity"
                     android:inputType="number"
                     android:text="@={basket.quantity}" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_basket_product_price"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -100,7 +100,7 @@
                     android:hint="@string/price"
                     android:inputType="number"
                     android:text="@={basket.price}" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Spinner
                 android:id="@+id/spinner_category"
@@ -126,7 +126,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/guideline"
                 app:layout_constraintTop_toTopOf="@id/spinner_category" />
-        </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
 </layout>
